@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "app/styles/_variables";
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.clearfix {
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }

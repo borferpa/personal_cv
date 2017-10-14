@@ -1,0 +1,28 @@
+
+@import "../../styles/_variables";
+.my-header{
+    background: $white;
+    border-bottom: 1px solid $woodsmoke;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    width: 100%;
+    z-index: 100;
+    .container-fluid{
+        width: 80%;
+        margin: 0px auto;
+        .logo{
+            width: 50px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+
+
+}
