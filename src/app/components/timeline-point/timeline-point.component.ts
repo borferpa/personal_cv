@@ -9,6 +9,7 @@ export class TimelinePointComponent implements OnInit {
 
   constructor() { }
   @Input() text: string;
+  @Input() small: boolean;
 
   ngOnInit() {
   }

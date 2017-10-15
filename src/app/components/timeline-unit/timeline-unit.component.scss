@@ -1,0 +1,49 @@
+@import "../../styles/_variables";
+
+.timeline-unit{
+    -webkit-box-shadow: -1px 2px 22px -4px rgba(0,0,0,0.41);
+    -moz-box-shadow: -1px 2px 22px -4px rgba(0,0,0,0.41);
+    box-shadow: -1px 2px 22px -4px rgba(0,0,0,0.41);
+    padding: 20px;
+    width: 40%;
+    margin-top: 50px;
+    position: relative;
+
+    &__arrow{
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 20px;
+        -webkit-box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.15);
+        -ms-box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.15);
+        -o-box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.15);
+        box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.15);
+        background-color: $white;
+    }
+    &.left{
+        float: left;
+        .timeline-unit__arrow{
+            right: -12px;
+            -webkit-transform: rotate(135deg);
+            -moz-transform: rotate(135deg);
+            -ms-transform: rotate(135deg);
+            -o-transform: rotate(135deg);
+            transform: rotate(135deg);
+
+        }
+    }
+    &.right{
+        float: right;
+        .timeline-unit__arrow{
+            left: -12px;
+            -webkit-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+    }
+}

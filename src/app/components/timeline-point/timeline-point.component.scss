@@ -1,28 +1,8 @@
 @import "../../styles/_variables";
 
-/*.timeline-point{
-    width: 100%;
-    .timeline-point-icon {
-        width: 100px; 
-        height: 100px; 
-        background: $red;
-        margin: 0px auto;
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-        
-
-        .small{
-            width: 70px;
-            height: 70px;
-        }
-    }
-}*/
-
 .timeline-point{
     width: 100%;
+    
     .timeline-point-icon{
         background-color:$red;
         padding:0;
@@ -31,8 +11,8 @@
         margin:auto;
         text-align:center;
         display:block;
-        -ms-transform: rotate(45deg); /* IE 9 */
-        -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
         transition: transform  0.1s cubic-bezier(0, 1.8, 1, 1.8);
         .text{
@@ -47,7 +27,15 @@
             transform: translateY(-50%) rotate(-45deg);
             font-size:1vw;
             text-transform:uppercase;
-            }
+        }
+
+        &.small{
+            width: 70px; 
+            height: 70px;
+        }
+    }
+    &.small{
+        padding-top: 60px;
     }
     
 }
