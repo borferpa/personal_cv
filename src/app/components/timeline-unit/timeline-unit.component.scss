@@ -1,49 +1,84 @@
 @import "../../styles/_variables";
 
 .timeline-unit{
-    -webkit-box-shadow: -1px 2px 22px -4px rgba(0,0,0,0.41);
-    -moz-box-shadow: -1px 2px 22px -4px rgba(0,0,0,0.41);
-    box-shadow: -1px 2px 22px -4px rgba(0,0,0,0.41);
-    padding: 20px;
-    width: 40%;
-    margin-top: 50px;
+    width: 100%;
+
     position: relative;
 
-    &__arrow{
+    &__timeline-point{
+        background-color:$red;
+        padding:0;
+        width: 40px; 
+        height: 40px; 
+        display:block;
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        transition: transform  0.1s cubic-bezier(0, 1.8, 1, 1.8);
         position: absolute;
-        width: 24px;
-        height: 24px;
-        position: absolute;
-        top: 20px;
-        -webkit-box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.15);
-        -moz-box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.15);
-        -ms-box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.15);
-        -o-box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.15);
-        box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.15);
-        background-color: $white;
-    }
-    &.left{
-        float: left;
-        .timeline-unit__arrow{
-            right: -12px;
-            -webkit-transform: rotate(135deg);
-            -moz-transform: rotate(135deg);
-            -ms-transform: rotate(135deg);
-            -o-transform: rotate(135deg);
-            transform: rotate(135deg);
+        left: 550px;
+        top: 60px;
 
+        i{
+            color:white;
+            -webkit-transform: translateY(-50%) rotate(-45deg);
+            -ms-transform: translateY(-50%) rotate(-45deg);
+            transform: translateY(-50%) rotate(-45deg);
+            position: absolute;
+            top: 19px;
+            font-size: 23px;
+            left: 8px;
         }
     }
-    &.right{
-        float: right;
-        .timeline-unit__arrow{
-            left: -12px;
-            -webkit-transform: rotate(-45deg);
-            -webkit-transform: rotate(-45deg);
-            -moz-transform: rotate(-45deg);
-            -ms-transform: rotate(-45deg);
-            -o-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    &__container{
+        -webkit-box-shadow: -1px 2px 22px -4px rgba(0,0,0,0.41);
+        -moz-box-shadow: -1px 2px 22px -4px rgba(0,0,0,0.41);
+        box-shadow: -1px 2px 22px -4px rgba(0,0,0,0.41);
+        padding: 20px;
+        width: 40%;
+        margin-top: 50px;
+        position: relative;
+
+        &__arrow{
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            top: 20px;
+            -webkit-box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.15);
+            -ms-box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.15);
+            -o-box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.15);
+            box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.15);
+            background-color: $white;
         }
+
+
+        &.left{
+            float: left;
+            .timeline-unit__container__arrow{
+                right: -12px;
+                -webkit-transform: rotate(135deg);
+                -moz-transform: rotate(135deg);
+                -ms-transform: rotate(135deg);
+                -o-transform: rotate(135deg);
+                transform: rotate(135deg);
+            }
+        }
+        &.right{
+            float: right;
+            .timeline-unit__container__arrow{
+                left: -12px;
+                -webkit-transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+        }
+    
+
     }
+    
+
 }
