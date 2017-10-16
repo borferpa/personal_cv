@@ -2,27 +2,25 @@
 
 .timeline-unit{
     width: 100%;
-
     position: relative;
-
+    margin-top: 50px;
     &__timeline-point{
         background-color:$red;
         padding:0;
         width: 40px; 
         height: 40px; 
+        margin-left: -20px;
         display:block;
         -ms-transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
         transition: transform  0.1s cubic-bezier(0, 1.8, 1, 1.8);
         position: absolute;
-        left: 550px;
-        top: 60px;
+        left: 50%;
+        top: 0;
 
         i{
             color:white;
-            -webkit-transform: translateY(-50%) rotate(-45deg);
-            -ms-transform: translateY(-50%) rotate(-45deg);
             transform: translateY(-50%) rotate(-45deg);
             position: absolute;
             top: 19px;
@@ -36,7 +34,7 @@
         box-shadow: -1px 2px 22px -4px rgba(0,0,0,0.41);
         padding: 20px;
         width: 40%;
-        margin-top: 50px;
+       // margin-top: 50px;
         position: relative;
 
         &__arrow{

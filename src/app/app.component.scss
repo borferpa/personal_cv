@@ -1,12 +1,11 @@
 .container-fluid {
     width: 80%;
     max-width: 2150px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 60px;
-    margin: 0px auto;
+    margin: 60px auto 0;
+    position: relative;
+    background: url("../assets/timeline-bg.png") center top repeat-y;
   }
 
-  section{
+  section {
       padding-top: 30px;
   }
